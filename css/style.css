@@ -1,0 +1,116 @@
+/* Reset cơ bản */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Toàn trang */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f2f4f8;
+}
+
+/* Khung chính */
+.container {
+    max-width: 900px;
+    margin: 40px auto;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Tiêu đề */
+h1 {
+    text-align: center;
+    color: #2c3e50;
+    font-size: 38px;
+    margin-bottom: 20px;
+}
+
+/* Nội dung */
+.content {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+/* Ảnh */
+.image {
+    flex: 1;
+    text-align: center;
+}
+
+.image img {
+    width: 280px;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Chữ */
+.text {
+    flex: 2;
+    font-size: 18px;
+    line-height: 1.8;
+    color: #333;
+}
+
+/* Nút */
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 28px;
+    background-color: #3498db;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #217dbb;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+/* Nút bấm chung */
+button {
+    padding: 10px 18px;
+    margin: 8px 6px;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    background: linear-gradient(135deg, #6c5ce7, #0984e3);
+    color: white;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Khi rê chuột vào */
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.25);
+    opacity: 0.95;
+}
+
+/* Khi bấm */
+button:active {
+    transform: scale(0.96);
+}
+
+/* Nút Bất ngờ nổi bật hơn */
+button:last-child {
+    background: linear-gradient(135deg, #fdcb6e, #e17055);
+    color: #2d3436;
+}
